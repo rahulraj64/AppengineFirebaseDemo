@@ -36,8 +36,8 @@ public class RegistrationEndpoint {
     public void registerDevice(@Named("regId") String regId) {
 
 
-        Firebase ref = new Firebase("https://appenginedemo007.firebaseio.com");
-        ref.child("gcm").setValue(regId); //Could not set value..
+        Firebase ref = new Firebase("https://YOUR_APP_ID.firebaseio.com");
+        ref.child("gcm").setValue(regId);
 
     }
 
